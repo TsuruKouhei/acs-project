@@ -11,7 +11,7 @@ http://agribot-test.site
 - **農業コンサルタント**: アンケートを通じて得たフィードバックを分析し、チャットボットを改善。
 
 ## 開発背景
-農業コンサルタントは、日々同様の質問に対応することが多く、効率化のためにAIを活用した解決策を模索しています。
+農業コンサルタントは、日々同様の質問に対応することが多く、効率化のためにAIを活用した解決策を模索されていました。
 
 ## 主な機能
 - **チャットボット機能**: ユーザーからの質問にAIが回答。
@@ -25,8 +25,8 @@ http://agribot-test.site
 - **バックエンド**: Ruby 3.0.1, Rails 6.1.7.6
 - **フロントエンド**: JavaScript, Bootstrap
 - **データベース**: PostgreSQL
-- **依存関係**: Devise, Kaminari, Ransack など
-- **インフラストラクチャ**: AWS EC2
+- **gem**: Devise, Kaminari, Ransack など
+- **インフラ**: AWS EC2
 - **外部サービス**: [Chatsimple](https://www.chatsimple.ai/)
 
 #### 実行手順
