@@ -4,10 +4,6 @@ class UsersController < ApplicationController
   before_action :correct_user, only: %i(show edit update destroy)
   skip_before_action :authenticate_user!, only: %i(guest_sign_in)
 
-  def index
-    @users = User.all
-  end
-
   def show
   end
 
