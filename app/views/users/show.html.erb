@@ -1,5 +1,5 @@
 <div class="user-form mt-4" style="max-width: 30%;">
-  <div style="color: #ffffff; text-align: center;">
+  <div style="color: #343a40; text-align: center;">
     <h1>プロフィール</h1>
   </div>
   <table class="table table-striped mt-1">
@@ -22,5 +22,6 @@
 
 <div class="form-row justify-content-center mt-4">
   <%= link_to 'プロフィールを編集する', edit_user_path(@user), class: 'btn btn-outline-secondary custom-link' %>
+  <%= link_to 'アカウントを削除する', @user, method: :delete, data: { confirm: '本当にアカウントを削除しますか？' }, class: 'btn btn-outline-danger custom-link' %>
   <%= link_to 'チャットボット画面', new_survey_path, class: 'btn btn-outline-secondary custom-link' %>
 </div>
