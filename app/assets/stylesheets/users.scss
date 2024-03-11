@@ -1,3 +1,42 @@
 // Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+/* プロフィールコンテナのスタイル */
+.user-form {
+  background-color: #f8f9fa; /* 軽い背景色 */
+  border-radius: 10px; /* 角を丸く */
+  padding: 20px; /* 内側のスペース */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* ソフトな影 */
+}
+
+/* テーブルのスタイル調整 */
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0,0,0,.05); /* ゼブラストライプの色を薄く */
+}
+
+.table td, .table th {
+  border-top: none; /* 上のボーダーを削除 */
+  vertical-align: middle; /* 中央揃え */
+}
+
+/* ボタンのスタイル調整 */
+.btn.custom-link {
+  margin: 10px; /* ボタン間のマージン */
+  width: auto; /* コンテンツに合わせて幅を自動調整 */
+}
+
+.btn-outline-danger {
+  border-color: #dc3545; /* ボタンの境界線の色 */
+}
+
+/* ボタンのホバーエフェクト */
+.btn.custom-link:hover {
+  transform: scale(1.05); /* ホバー時に少し拡大 */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* ホバー時の影 */
+}
+
+/* テーブル内のテキストを中央揃えにする */
+.table td {
+  text-align: center; /* テキストを中央揃えに */
+  vertical-align: middle; /* 垂直方向も中央揃えに */
+}

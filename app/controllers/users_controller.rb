@@ -28,7 +28,10 @@ class UsersController < ApplicationController
 
   def destroy
     @user.destroy
-    redirect_to new_user_session_path, notice: 'アカウントが削除されました！'
+    respond_to do |format|
+      format.html { redirect_to new_user_session_path, notice: 'アカウントが削除されました' }
+      format.json { head :no_content }
+    end
   end
 
   # ゲスト一般ユーザーとしてログインするためのアクション
