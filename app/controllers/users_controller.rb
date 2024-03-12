@@ -25,7 +25,6 @@ class UsersController < ApplicationController
     end
   end
   
-
   def destroy
     @user.destroy
     respond_to do |format|
