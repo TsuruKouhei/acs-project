@@ -116,3 +116,57 @@
     font-size: 1.2rem;
   }
 }
+
+/* 基本的なスタイリング */
+.iframe-container iframe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0px 14px 28px 0px rgba(0,0,0,0.2);
+  width: 100%; /* 幅を100%に設定してコンテナの幅に合わせる */
+  max-width: 600px; /* 最大幅を600pxに設定 */
+  height: auto; /* 高さを自動調整 */
+  aspect-ratio: 1 / 1; /* アスペクト比を1:1に設定 */
+}
+
+.top-container {
+  display: flex;
+  flex-direction: column; /* モバイル表示では縦並び */
+  align-items: center; /* 中央揃え */
+}
+
+@media (min-width: 768px) {
+  /* 画面幅が768px以上の場合 */
+  .top-container {
+    flex-direction: row; /* タブレットやデスクトップ表示では横並びに変更 */
+    justify-content: space-evenly; /* 要素間のスペースを均等に配分 */
+    flex-wrap: wrap; /* 必要に応じて折り返し */
+  }
+  .iframe-container, .top-survey-form {
+    flex: 1 1 300px; /* フレキシブルなサイズ調整 */
+    margin: 10px; /* 余白の調整 */
+  }
+}
+
+.iframe-container iframe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0px 14px 28px 0px rgba(0,0,0,0.2);
+}
+
+#consultant_message {
+  display: none;
+  color: #0f9bbe;
+  text-align: center;
+}
+
+.top-survey-form h5 {
+  color: #ffffff;
+  text-align: center;
+  padding-top: 7px;
+}
