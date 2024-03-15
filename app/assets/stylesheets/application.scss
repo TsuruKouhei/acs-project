@@ -39,7 +39,6 @@
   }
 }
 
-
 .nav-link {
   margin: 0 10px;
   padding: 10px 0;
@@ -211,4 +210,18 @@ table.search-table thead tr:first-child th:last-child {
 .copyright {
   margin: 0;
   color: #6c757d;
+}
+
+.field_with_errors {
+  background-color: #ffcccc; /* ここで好みの色に変更 */
+  border: 1px solid #ffcccc;
+}
+
+#error_explanation {
+  background-color: #ffcccc; /* 背景色 */
+  color: #000000; /* 文字色 */
+  padding: 15px;
+  border: 1px solid #ffcccc;
+  border-radius: 4px;
+  margin-bottom: 20px;
 }
