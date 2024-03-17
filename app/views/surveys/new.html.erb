@@ -11,7 +11,7 @@
     <%= form_with(model: @survey, local: true, html: { class: 'needs-validation', novalidate: true }) do |form| %>
       <% if @survey.errors.any? %>
         <div id="error_explanation" class="alert alert-danger">
-          <h2><%= pluralize(@survey.errors.count, "error") %>が検出されました。</h2>
+          <h2>入力内容に誤りがあるため送信することが出来ませんでした。</h2>
           <ul>
             <% @survey.errors.full_messages.each do |message| %>
               <li><%= message %></li>
