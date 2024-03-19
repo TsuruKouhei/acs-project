@@ -57,13 +57,14 @@
 #side-nav {
   width: 250px;
   position: fixed;
-  top: 0;
+  top: 50px;
   left: -250px; /* 初期状態では画面外に隠れる */
   height: 100%;
   background-color: #f4f4f4;
   transition: left 0.3s;
   padding-top: 1em;
   z-index: 1000; /* 他の要素よりも前面に表示 */
+  
 }
 
 #side-nav.active {
