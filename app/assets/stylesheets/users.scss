@@ -40,3 +40,13 @@
   text-align: center; /* テキストを中央揃えに */
   vertical-align: middle; /* 垂直方向も中央揃えに */
 }
+
+// ユーザー検索フォームのスタイル
+.search-form-container {
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-form-row {
+  padding: 20px;
+}
